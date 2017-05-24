@@ -54,7 +54,7 @@ public class MyStarter {
 					line=line.replaceAll("=", "\":");
 					line=line.replaceAll(",", ",\"");
 					line="{\""+line.trim()+"}";*/
-					Thread.sleep(2);
+					Thread.sleep(100);
 					line=convertToJson(line).replaceAll("[^a-zA-Z0-9\\s,\":\\}\\{+]", "");
 					System.out.println(line+",");		
 					
